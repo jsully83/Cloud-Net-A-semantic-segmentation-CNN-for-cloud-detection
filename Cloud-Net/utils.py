@@ -2,6 +2,7 @@ import keras
 import keras.backend as K
 from tqdm import tqdm
 
+
 class ADAMLearningRateTracker(keras.callbacks.Callback):
     """It prints out the last used learning rate after each epoch (useful for resuming a training)
     original code: https://github.com/keras-team/keras/issues/7874#issuecomment-329347949

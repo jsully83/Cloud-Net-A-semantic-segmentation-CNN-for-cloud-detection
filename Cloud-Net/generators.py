@@ -1,8 +1,10 @@
 import random
+
+import numpy as np
+from augmentation import (flipping_img_and_msk, rotate_cclk_img_and_msk,
+                          rotate_clk_img_and_msk, zoom_img_and_msk)
 from skimage.io import imread
 from skimage.transform import resize
-import numpy as np
-from augmentation import flipping_img_and_msk, rotate_cclk_img_and_msk, rotate_clk_img_and_msk, zoom_img_and_msk
 
 """
 Some lines borrowed from https://www.kaggle.com/petrosgk/keras-vgg19-0-93028-private-lb

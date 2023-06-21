@@ -1,7 +1,8 @@
-from keras.models import Model
-from keras.layers import Input, concatenate, Conv2D, MaxPooling2D, Conv2DTranspose, BatchNormalization,\
-    Activation, Dropout
 import keras
+from keras.layers import (Activation, BatchNormalization, Conv2D,
+                          Conv2DTranspose, Dropout, Input, MaxPooling2D,
+                          concatenate)
+from keras.models import Model
 
 """
 Some parts borrowed from https://www.kaggle.com/cjansen/u-net-in-keras
