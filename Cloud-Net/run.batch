@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --export=ALL
+#SBATCH --partition=gpu
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=2
+#SBATCH --gres=gpu:v100-sxm2:1
+#SBATCH --time=08:00:00
+#SBATCH --job-name=msatAI
+#SBATCH --mem=64GB
+#SBATCH --output=/work/methaneai/Cloud-Net-A-semantic-segmentation-CNN-for-cloud-detection/data/MethaneSAT/logs/%x_%j.out
+#SBATCH --error=/work/methaneai/Cloud-Net-A-semantic-segmentation-CNN-for-cloud-detection/data/MethaneSAT/logs/%x_%j.err
+
+sh /work/methaneai/Cloud-Net-A-semantic-segmentation-CNN-for-cloud-detection/Cloud-Net/initialize.sh
